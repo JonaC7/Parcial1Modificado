@@ -62,7 +62,8 @@ namespace Parcial
 
 
 
-                    list.Add(new Students(nombre, edad, nota1, nota2, parcial, parcial, promedio));
+                    Students students = new Students() { Nombre = nombre, Edad = edad, Nota1 = nota1, Nota2 = nota2, Parcial = parcial, Promedio = promedio };
+                    registro.Add(students);
 
                     contador++;
                 }

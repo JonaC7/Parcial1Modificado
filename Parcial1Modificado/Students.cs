@@ -14,6 +14,10 @@ namespace Parcial1Modificado
         private double parcial;
         private double promedio;
 
+        public Students()
+        {
+        }
+
         public Students(string nombre, int edad, double notaLab1, double notaLab2, double parcial, double promedio, double promedio1)
         {
             this.nombre = nombre;
@@ -23,6 +27,14 @@ namespace Parcial1Modificado
             this.parcial = parcial;
             this.promedio = promedio;
         }
+
+        public string Nombre { get; internal set; }
+        public int Edad { get; internal set; }
+        public double Nota1 { get; internal set; }
+        public double Nota2 { get; internal set; }
+        public double Parcial { get; internal set; }
+        public double Promedio { get; internal set; }
+
         public string getData()
         {
             return "-Nombre: " + nombre + "  -Edad: " + edad + "  -Nota Laboratorio 1: " + notaLab1 + "  -Nota Laboratorio 2: " + notaLab2 + "  -Parcial: " + parcial + "  -Promedio: " + promedio;
