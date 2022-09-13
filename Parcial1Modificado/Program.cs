@@ -6,7 +6,7 @@ namespace Parcial
 {
     class Program
     {
-        private static object list;
+        private static readonly object list;
 
         static void Main(string[] args)
         {
